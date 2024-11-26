@@ -84,5 +84,14 @@ http://www.w3.org/2000/svg"
         possible.
       </p>
     </div>
+    <script>
+      $(document).ready(function () {
+        var message = {
+          type: "zohoFormSubmitted",
+          data: "The form has been submitted.",
+        };
+        window.parent.postMessage(message, "*");
+      });
+    </script>
   </body>
 </html>
